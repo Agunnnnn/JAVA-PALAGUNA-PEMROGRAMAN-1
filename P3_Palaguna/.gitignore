@@ -1,0 +1,10 @@
+# NetBeans
+nbproject/private/
+nbproject/
+
+# build hasil compile
+build/
+dist/
+
+# file temporary
+*.class
