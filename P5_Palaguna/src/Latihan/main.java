@@ -1,9 +1,8 @@
-package p5_palaguna;
+package Latihan;
 import java.util.Scanner;
 
-public class P5_Palaguna {
-
-    public static void main(String[] args) {
+public class main {
+        public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan nilai: ");
         int nilai = input.nextInt();
@@ -17,5 +16,5 @@ public class P5_Palaguna {
         input.close();
             
     }
-    
+   
 }
