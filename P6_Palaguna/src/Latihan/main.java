@@ -1,6 +1,6 @@
-package p6_palaguna;
+package Latihan;
 import java.util.Scanner;
-public class P6_Palaguna {
+public class main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -19,5 +19,4 @@ public class P6_Palaguna {
 
         input.close();
     }
-    
 }
