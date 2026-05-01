@@ -1,6 +1,7 @@
 package Latihan;
 public class NewJFrame extends javax.swing.JFrame {
-
+    String nama;
+    int Usia = 0;
 
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(NewJFrame.class.getName());

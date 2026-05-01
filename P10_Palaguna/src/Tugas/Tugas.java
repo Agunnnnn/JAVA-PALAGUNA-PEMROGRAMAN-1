@@ -49,6 +49,8 @@ public class Tugas extends javax.swing.JFrame {
 
         jLabel2.setText("Angka 2");
 
+        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+
         jTextField2.addActionListener(this::jTextField2ActionPerformed);
 
         jButton2.setText("-");
@@ -61,6 +63,7 @@ public class Tugas extends javax.swing.JFrame {
         jButton4.addActionListener(this::jButton4ActionPerformed);
 
         jButton5.setText("x");
+        jButton5.addActionListener(this::jButton5ActionPerformed);
 
         jButton6.setText("Clear");
         jButton6.addActionListener(this::jButton6ActionPerformed);
@@ -150,43 +153,56 @@ public class Tugas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        double a= Double.parseDouble(jLabel1.getText());
-        double b= Double.parseDouble(jLabel2.getText());
+        double a= Double.parseDouble(jTextField1.getText());
+        double b= Double.parseDouble(jTextField2.getText());
         double hasil = a - b;
 
-        jTextArea1.setText("Hasil : " + hasil );   
+        jTextArea1.setText("Hasil :  " + a + " - " + b  + " = "+ hasil ); 
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        double a= Double.parseDouble(jLabel1.getText());
-        double b= Double.parseDouble(jLabel2.getText());
+        double a= Double.parseDouble(jTextField1.getText());
+        double b= Double.parseDouble(jTextField2.getText());
         double hasil = a / b;
 
-        jTextArea1.setText("Hasil : " + hasil );  
+        jTextArea1.setText("Hasil :  " + a + " / " + b  + " = "+ hasil ); 
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        double a= Double.parseDouble(jLabel1.getText());
-        double b= Double.parseDouble(jLabel2.getText());
+        double a= Double.parseDouble(jTextField1.getText());
+        double b= Double.parseDouble(jTextField2.getText());
         double hasil = a + b;
-        jTextArea1.setText("Hasil : " + hasil );
+        jTextArea1.setText("Hasil :  " + a + " + " + b  + " = "+ hasil ); 
                   
             
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        double a= Double.parseDouble(jLabel1.getText());
-        double b= Double.parseDouble(jLabel2.getText());
+        double a= Double.parseDouble(jTextField1.getText());
+        double b= Double.parseDouble(jTextField2.getText());
         double hasil = a - b;
 
-        jTextArea1.setText("Hasil : " + hasil ); 
+        jTextArea1.setText("Hasil :  " + a + " - " + b  + " = "+ hasil ); 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         jTextArea1.setText(""); 
-        jLabel2.setText(""); 
-        jLabel1.setText(""); 
+        jTextField1.setText(""); 
+       jTextField2.setText(""); 
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        double a= Double.parseDouble(jTextField1.getText());
+        double b= Double.parseDouble(jTextField2.getText());
+        double hasil = a * b;
+
+        jTextArea1.setText("Hasil :  " + a + " X " + b  + " = "+ hasil ); 
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
